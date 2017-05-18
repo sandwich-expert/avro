@@ -21,7 +21,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>trevni-java</artifactId>
-    <groupId>com.thelastpickle</groupId>
+    <groupId>com.thelastpickle.avro</groupId>
     <version>1.8.2</version>
     <relativePath>../</relativePath>
   </parent>
@@ -96,7 +96,7 @@
           <scope>provided</scope>
         </dependency>
         <dependency>
-          <groupId>com.thelastpickle</groupId>
+          <groupId>com.thelastpickle.avro</groupId>
           <artifactId>avro-mapred</artifactId>
           <version>${project.version}</version>
           <classifier>hadoop1</classifier>
@@ -125,14 +125,14 @@
           <scope>provided</scope>
         </dependency>
         <dependency>
-          <groupId>com.thelastpickle</groupId>
+          <groupId>com.thelastpickle.avro</groupId>
           <artifactId>avro-mapred</artifactId>
           <version>${project.version}</version>
           <classifier>hadoop2</classifier>
           <scope>compile</scope>
         </dependency>
         <dependency>
-          <groupId>com.thelastpickle</groupId>
+          <groupId>com.thelastpickle.avro</groupId>
           <artifactId>avro</artifactId>
           <version>${project.version}</version>
           <scope>compile</scope>

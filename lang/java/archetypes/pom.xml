@@ -20,7 +20,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.thelastpickle</groupId>
+    <groupId>com.thelastpickle.avro</groupId>
     <artifactId>avro-parent</artifactId>
     <version>1.8.2</version>
     <relativePath>../pom.xml</relativePath>

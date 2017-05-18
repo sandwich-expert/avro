@@ -21,12 +21,12 @@
 
   <parent>
     <artifactId>trevni-java</artifactId>
-    <groupId>com.thelastpickle</groupId>
+    <groupId>com.thelastpickle.avro</groupId>
     <version>1.8.2</version>
     <relativePath>..</relativePath>
   </parent>
 
-  <groupId>com.thelastpickle</groupId>
+  <groupId>com.thelastpickle.avro</groupId>
   <artifactId>trevni-doc</artifactId>
   <version>1.8.2</version>
   <packaging>pom</packaging>

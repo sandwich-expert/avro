@@ -22,7 +22,7 @@
 
 
   <artifactId>avro-parent</artifactId>
-  <groupId>com.thelastpickle</groupId>
+  <groupId>com.thelastpickle.avro</groupId>
   <packaging>pom</packaging>
   <version>1.8.2</version>
 
@@ -165,7 +165,7 @@
                 </pluginExecution>
                 <pluginExecution>
                   <pluginExecutionFilter>
-                    <groupId>com.thelastpickle</groupId>
+                    <groupId>com.thelastpickle.avro</groupId>
                     <artifactId>avro-maven-plugin</artifactId>
                     <versionRange>[${project.version},)</versionRange>
                     <goals>

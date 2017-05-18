@@ -38,12 +38,12 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.thelastpickle</groupId>
+      <groupId>com.thelastpickle.avro</groupId>
       <artifactId>avro</artifactId>
       <version>\${avro.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.thelastpickle</groupId>
+      <groupId>com.thelastpickle.avro</groupId>
       <artifactId>avro-ipc</artifactId>
       <version>\${avro.version}</version>
     </dependency>
@@ -79,7 +79,7 @@
     <defaultGoal>install</defaultGoal>
     <plugins>
       <plugin>
-        <groupId>com.thelastpickle</groupId>
+        <groupId>com.thelastpickle.avro</groupId>
         <artifactId>avro-maven-plugin</artifactId>
         <version>\${avro.version}</version>
         <executions>
@@ -92,7 +92,7 @@
         </executions>
         <dependencies>
           <dependency>
-            <groupId>com.thelastpickle</groupId>
+            <groupId>com.thelastpickle.avro</groupId>
             <artifactId>avro-ipc</artifactId>
             <version>\${avro.version}</version>
           </dependency>

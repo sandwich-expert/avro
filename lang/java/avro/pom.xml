@@ -22,7 +22,7 @@
 
   <parent>
     <artifactId>avro-parent</artifactId>
-    <groupId>com.thelastpickle</groupId>
+    <groupId>com.thelastpickle.avro</groupId>
     <version>1.8.2</version>
     <relativePath>../</relativePath>
   </parent>
@@ -105,6 +105,8 @@
                   <shadedPattern>avro.shaded.com.google.common</shadedPattern>
                 </relocation>
               </relocations>
+              <shadedArtifactAttached>true</shadedArtifactAttached>
+              <shadedClassifierName>shaded</shadedClassifierName>
             </configuration>
           </execution>
         </executions>
@@ -165,7 +167,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.thelastpickle</groupId>
+      <groupId>com.thelastpickle.avro</groupId>
       <artifactId>avro-guava-dependencies</artifactId>
       <version>${project.version}</version>
     </dependency>
