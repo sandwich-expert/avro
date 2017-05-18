@@ -22,8 +22,8 @@
 
   <parent>
     <artifactId>avro-parent</artifactId>
-    <groupId>org.apache.avro</groupId>
-    <version>1.8.2-tlp.1</version>
+    <groupId>com.thelastpickle</groupId>
+    <version>1.8.2</version>
     <relativePath>../</relativePath>
   </parent>
 
@@ -164,7 +164,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.apache.avro</groupId>
+      <groupId>com.thelastpickle</groupId>
       <artifactId>avro-guava-dependencies</artifactId>
       <version>${project.version}</version>
     </dependency>

@@ -22,16 +22,40 @@
   <parent>
     <groupId>org.apache.avro</groupId>
     <artifactId>avro-toplevel</artifactId>
-    <version>1.8.2-tlp.1</version>
+    <version>1.8.2</version>
     <relativePath>../../</relativePath>
   </parent>
 
   <artifactId>avro-parent</artifactId>
+  <groupId>com.thelastpickle</groupId>
   <packaging>pom</packaging>
+  <version>1.8.2</version>
 
   <name>Apache Avro Java</name>
   <url>http://avro.apache.org</url>
   <description>Avro parent Java project</description>
+
+
+  <scm>
+    <connection>scm:git:http://127.0.0.1/svn/my-project</connection>
+    <developerConnection>scm:git:git@github.com:sandwich-expert/avro.git</developerConnection>
+    <tag>fc780e8cd231398ab6f7e23719c9fe78b221b4ad</tag>
+    <url>http://127.0.0.1/svn/my-project</url>
+  </scm>
+
+  <developers>
+    <developer>
+      <email>todd@thelastpickle.com</email>
+      <name>Todd Nine</name>
+      <organization>The Last Pickle</organization>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>Apache 2.0</name>
+    </license>
+  </licenses>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -146,7 +170,7 @@
                 </pluginExecution>
                 <pluginExecution>
                   <pluginExecutionFilter>
-                    <groupId>org.apache.avro</groupId>
+                    <groupId>com.thelastpickle</groupId>
                     <artifactId>avro-maven-plugin</artifactId>
                     <versionRange>[${project.version},)</versionRange>
                     <goals>
@@ -306,6 +330,32 @@
       </plugins>
     </pluginManagement>
     <plugins>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.7</version>
+        <extensions>true</extensions>
+        <configuration>
+          <serverId>ossrh</serverId>
+          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+          <autoReleaseAfterClose>true</autoReleaseAfterClose>
+        </configuration>
+      </plugin>
+      <!-- sign releases -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>1.5</version>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
@@ -546,5 +596,12 @@
       <optional>true</optional>
     </dependency>
   </dependencies>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
 
 </project>

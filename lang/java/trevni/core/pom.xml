@@ -21,8 +21,8 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>trevni-java</artifactId>
-    <groupId>org.apache.avro</groupId>
-    <version>1.8.2-tlp.1</version>
+    <groupId>com.thelastpickle</groupId>
+    <version>1.8.2</version>
     <relativePath>../</relativePath>
   </parent>
 

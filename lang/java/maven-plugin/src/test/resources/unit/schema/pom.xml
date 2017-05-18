@@ -50,7 +50,7 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.apache.avro</groupId>
+      <groupId>com.thelastpickle</groupId>
       <artifactId>avro</artifactId>
       <version>1.7.3-SNAPSHOT</version>
     </dependency>

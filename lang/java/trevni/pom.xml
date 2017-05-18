@@ -22,14 +22,14 @@
 
   <parent>
     <artifactId>avro-parent</artifactId>
-    <groupId>org.apache.avro</groupId>
-    <version>1.8.2-tlp.1</version>
+    <groupId>com.thelastpickle</groupId>
+    <version>1.8.2</version>
     <relativePath>../</relativePath>
   </parent>
 
   <artifactId>trevni-java</artifactId>
   <name>Trevni Java</name>
-  <groupId>org.apache.avro</groupId>
+  <groupId>com.thelastpickle</groupId>
   <description>Trevni Java</description>
   <url>http://avro.apache.org/</url>
   <packaging>pom</packaging>
