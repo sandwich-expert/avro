@@ -24,7 +24,10 @@ import com.google.common.cache.LoadingCache;
 import com.google.common.collect.MapMaker;
 import com.google.common.primitives.Bytes;
 
-class GuavaClasses {
+/**
+ * Cursory javadoc to get a jar produced for maven central
+ */
+public class GuavaClasses {
   /*
    * Referencing Guava classes here includes them in the minimized Guava jar
    * that is shaded in the avro jar.
